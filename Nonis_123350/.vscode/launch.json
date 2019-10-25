@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MainTime",
+            "request": "launch",
+            "mainClass": "main_time.MainTime",
+            "projectName": "Nonis_123350"
+        },
+        {
+            "type": "java",
             "name": "Debug (Launch) - Current File",
             "request": "launch",
             "mainClass": "${file}"
