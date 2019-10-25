@@ -27,7 +27,7 @@ public class InputOutput {
      * @param hardSeed seed reale per il calcolo del seedRandom
      * @return Stringa di un singolo double.
      */
-    public String makeNumeroRandom(int hardSeed) {
+    private String makeNumeroRandom(int hardSeed) {
         int seedRandom = (int)(Math.random() * hardSeed);
         RandomGenerator random = new RandomGenerator(seedRandom);
         double maxNum = random.get() * 1000000.0;

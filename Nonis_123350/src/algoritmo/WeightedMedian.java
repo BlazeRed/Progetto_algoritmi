@@ -1,4 +1,7 @@
 package algoritmo;
+
+import java.util.Arrays;
+
 import random.RandomGenerator;
 
 
@@ -15,7 +18,11 @@ public class WeightedMedian {
         //Ordino l'array dato un sottoarray lo-hi
 		quickSort(arr, lo, hi);
 		//Somma di tutti gli elemeti dell'array
-		double sumW = totalSumInput(arr);
+        double sumW = totalSumInput(arr);
+        // // Debugging
+        // System.out.println("La somma totale è: " + sumW);
+        // System.out.println("La somma totale diviso 2 è: " + sumW/2);
+        // System.out.println("Array ordinato: " + Arrays.toString(arr));
 		//indice della somma cumulativa
 		int indexCumSum = cumulativeSum(arr, sumW);
         return arr[indexCumSum-1]; 
