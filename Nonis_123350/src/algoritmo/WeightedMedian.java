@@ -1,6 +1,6 @@
 package algoritmo;
 
-import java.util.Arrays;
+// import java.util.Arrays;
 
 import random.RandomGenerator;
 
