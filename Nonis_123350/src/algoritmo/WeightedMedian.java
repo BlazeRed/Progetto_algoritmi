@@ -14,23 +14,40 @@ public class WeightedMedian {
     	int hi = arr.length-1;
         //Ordino l'array dato un sottoarray lo-hi
 		quickSort(arr, lo, hi);
-		
-		//calcolo la somma totale dei pesi
+		//Somma di tutti gli elemeti dell'array
+		double sumW = totalSumInput(arr);
+		//indice della somma cumulativa
+		int indexCumSum = cumulativeSum(arr, sumW);
+        return arr[indexCumSum-1]; 
+	} 
+	
+	/**
+	 * @param arr
+	 * @return la somma degli elementi di arr
+	 */
+	private double totalSumInput(double [] arr){
 		double sumW = 0;
 		for(int i=0; i<arr.length; i++){
 			sumW += arr[i];
 		}
-		
-		//calcolo la somma cumulativa per la mediana pesata
+		return sumW;
+	}
+
+	/**
+	 * 
+	 * @param arr di double
+	 * @param sumW somma di tutti gli elementi di arr
+	 * @return indice per la mediana
+	 */
+	private int cumulativeSum(double arr[], double sumW){
+		int index = 0;
 		double partialSum = 0;
-        int i = 0;
-        while(partialSum<sumW/2) {
-        	partialSum += arr[i];
-        	i++;
+		while(partialSum<sumW/2) {
+        	partialSum += arr[index];
+        	index++;
         }
-        
-        return arr[i-1]; 
-    } 
+		return index;
+	}
 
 	/**
 	 * @param arr array da ordinare
