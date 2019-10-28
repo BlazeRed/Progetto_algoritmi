@@ -30,7 +30,7 @@ public class Main{
 				input[i] =  Double.parseDouble( res[i] );		
 			}
             //TODO elimina la stampa del'input
-			System.out.println(Arrays.toString(input));
+			//System.out.println(Arrays.toString(input));
 			System.out.println(mediana.medianaPesata(input));
 
         }else {
