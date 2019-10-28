@@ -1,7 +1,6 @@
 package main_time;
 
 import generazione_campioni.GenerazioneCampioni;
-import input_output.InputOutput;
 
 public class MainTime {
 
@@ -9,10 +8,6 @@ public class MainTime {
         
         GenerazioneCampioni gen = new GenerazioneCampioni(100, 233);
         gen.misurazioneTempoMedio();
-
-        
-
-
         
     }
 
