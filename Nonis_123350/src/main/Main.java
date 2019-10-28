@@ -9,7 +9,9 @@ public class Main{
         //0.1,0.35,0.05,0.1,0.15,0.05,0.2.
         // 0.1,0.35,0.05,0.1,0.15,0.05,0.2  .
         WeightedMedian mediana = new WeightedMedian();
-        
+
+        //TODO capire come portare fuori la lavoraizone dell'input
+
         Scanner in = new Scanner(System.in); 
         String str = in.nextLine();
 
@@ -20,11 +22,11 @@ public class Main{
            
             String [] res = sub.split(",");
 			double [] input = new double[res.length];
-                
+            
 			for(int i=0; i<res.length; i++) {
 				input[i] =  Double.parseDouble( res[i] );		
 			}
-			// !! PROVVISORIA stampa del'input
+			// TODO elimina la stampa del'input
 			System.out.println(Arrays.toString(input));
 			System.out.println(mediana.medianaPesata(input));
 

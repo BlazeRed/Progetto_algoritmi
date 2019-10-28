@@ -2,10 +2,8 @@ package input_output;
 
 import random.RandomGenerator;
 
-
 public class InputOutput {
 
-   
     /**
      * Metodo che crea una stringa di input formata da numeri double random di lunghezza prefissata
      * @param lunghezza numero di double nella stringa
@@ -37,6 +35,5 @@ public class InputOutput {
         String realNumString = realNumRound + "";
         return realNumString;
     }
-
 
 }
