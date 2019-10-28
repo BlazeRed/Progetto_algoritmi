@@ -8,10 +8,12 @@ public class MainTime {
     public static void main(String[] args) {
         InputOutput inOut = new InputOutput();
 
-        System.out.println("Main Time");
-        String input = inOut.makeInput(5, 57524145);
+        String input = inOut.makeInput(5000, 57524145);
         System.out.println(input);
 
+        while(!( input.substring(input.length()-1).equals("."))) {
+            input = input.substring(0, input.length()-1);
+        }
         if ((input.substring(input.length() - 1).equals(".")) && (input.contains(","))) {
             // elimino il "." terminale
             String sub = input.substring(0, input.length() - 1);
@@ -25,7 +27,7 @@ public class MainTime {
 
             WeightedMedian mediana = new WeightedMedian();
             System.out.println(mediana.medianaPesata(inputArr));
-
+            
         }
     }
 

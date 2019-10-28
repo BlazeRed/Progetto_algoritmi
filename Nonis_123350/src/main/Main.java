@@ -1,5 +1,4 @@
 package main;
-import java.util.Arrays;
 import java.util.Scanner;
 import algoritmo.*;
 
@@ -29,8 +28,7 @@ public class Main{
 			for(int i=0; i<res.length; i++) {
 				input[i] =  Double.parseDouble( res[i] );		
 			}
-            //TODO elimina la stampa del'input
-			//System.out.println(Arrays.toString(input));
+
 			System.out.println(mediana.medianaPesata(input));
 
         }else {
