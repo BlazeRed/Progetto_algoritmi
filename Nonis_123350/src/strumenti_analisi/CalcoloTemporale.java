@@ -1,5 +1,6 @@
 package strumenti_analisi;
-//import main.*;
+
+import main_time.MainWork;
 
 public class CalcoloTemporale{
     //classe che mette a disposizione tutti gli strumenti per l'analisi temporale delgi algoritmi
@@ -24,7 +25,7 @@ public class CalcoloTemporale{
 			rip = rip * 2; 
 			t0 = System.currentTimeMillis();
 			for (int i = 1; i <= rip; i++) {
-				//Main.main(input);
+				MainWork.main(input);
 			}
 			t1 = System.currentTimeMillis();
 		}
@@ -36,7 +37,7 @@ public class CalcoloTemporale{
 			rip = (max + min) / 2;
 			t0 = System.currentTimeMillis();
 			for (int i = 1; i <= rip; i++) {
-				//Main.main(input);
+				MainWork.main(input);
 			}
 			t1 = System.currentTimeMillis();
 			if ((t1 - t0) <= tMin) {
@@ -52,7 +53,7 @@ public class CalcoloTemporale{
 	public static double calcoloDeiTempi(String[] input, double rip){
 		long t0 = System.currentTimeMillis();
 		for(int i = 0; i<rip; i++){
-			//Main.main(input);
+			MainWork.main(input);
 		}
 		long t1 = System.currentTimeMillis();
 		long tTot = t1 -t0;
