@@ -23,6 +23,7 @@ public class MainWork {
             }
             WeightedMedian mediana = new WeightedMedian();
             //System.out.println(mediana.medianaPesata(inputArr));
+            mediana.medianaPesata(inputArr);
         }
     }
 }
