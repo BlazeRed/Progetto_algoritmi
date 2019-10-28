@@ -26,15 +26,15 @@ public class Main{
 			for(int i=0; i<res.length; i++) {
 				input[i] =  Double.parseDouble( res[i] );		
 			}
-			// TODO elimina la stampa del'input
+            //TODO elimina la stampa del'input
 			System.out.println(Arrays.toString(input));
 			System.out.println(mediana.medianaPesata(input));
 
         }else {
 			in.close();
 			throw new IllegalArgumentException("L'input non è del formato giusto");
-		}
-		
+        }
+    		
 		in.close();
     }
 }
