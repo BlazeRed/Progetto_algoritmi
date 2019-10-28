@@ -16,6 +16,9 @@ public class Main{
         String str = in.nextLine();
 
         //controllo se l'ultimo elemento della stringa è un punto e se sono presenti i separatori
+        while(!( str.substring(str.length()-1).equals("."))) {
+            str = str.substring(0, str.length()-1);
+        }
         if(( str.substring(str.length()-1).equals(".") ) && ( str.contains(",") )){
             //elimino il "." terminale
             String sub = str.substring(0, str.length()-1);
