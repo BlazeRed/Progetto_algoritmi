@@ -22,8 +22,8 @@ public class MainWork {
                 inputArr[i] = Double.parseDouble(res[i]);
             }
             WeightedMedian mediana = new WeightedMedian();
-            //System.out.println(mediana.medianaPesata(inputArr));
-            mediana.medianaPesata(inputArr);
+            System.err.println("mediana " + mediana.medianaPesata(inputArr));
+            //double med = mediana.medianaPesata(inputArr);
         }
     }
 }
