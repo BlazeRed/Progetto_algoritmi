@@ -91,6 +91,11 @@ public class CalcoloTemporale{
 
 		return e;
 	}
+
+	public static double tMin(long granularita) {
+		double tMin = granularita / 0.02;
+		return tMin;
+	}
     
 
 }

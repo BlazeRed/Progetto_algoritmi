@@ -1,14 +1,15 @@
 package main_time;
 
+import generazione_campioni.GenerazioneCampioni;
 import input_output.InputOutput;
 
 public class MainTime {
 
     public static void main(String[] args) {
-        InputOutput inOut = new InputOutput();
-
-        String input = inOut.makeInput(5000, 57524145);
         
+        GenerazioneCampioni gen = new GenerazioneCampioni(100, 233);
+        gen.misurazioneTempoMedio();
+
         
 
 
