@@ -1,7 +1,6 @@
 package main_time;
 
 import input_output.InputOutput;
-import algoritmo.*;
 
 public class MainTime {
 
