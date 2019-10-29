@@ -24,7 +24,7 @@ public class GenerazioneCampioni {
         double tMed = 0;
         for (int i=1; i <= lunghezza; i++) {
                 String[] campione = new String[1];
-                campione[0] = inOut.makeInput(lunghezza, seed);
+                campione[0] = inOut.makeInput(i, seed);
                 tMed = CalcoloTemporale.misurazioneTempoMedio(campione, ripetizioni, za, CalcoloTemporale.calcolaRip(campione, tMin));
                 System.out.println(tMed);
         }

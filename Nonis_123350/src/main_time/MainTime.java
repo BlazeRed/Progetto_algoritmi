@@ -6,7 +6,7 @@ public class MainTime {
 
     public static void main(String[] args) {
         
-        GenerazioneCampioni gen = new GenerazioneCampioni(100, 89080);
+        GenerazioneCampioni gen = new GenerazioneCampioni(2000, 89080);
         gen.misurazioneTempoMedio();
         
     }
