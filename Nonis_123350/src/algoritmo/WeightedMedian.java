@@ -1,7 +1,5 @@
 package algoritmo;
 
-// import java.util.Arrays;
-
 import random.RandomGenerator;
 
 
