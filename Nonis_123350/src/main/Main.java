@@ -5,12 +5,8 @@ import algoritmo.*;
 public class Main{
   
     public static void main (String[] args) {
-        //0.1,0.35,0.05,0.1,0.15,0.05,0.2.
-        // 0.1,0.35,0.05,0.1,0.15,0.05,0.2  .
         WeightedMedian mediana = new WeightedMedian();
-
-        //TODO capire come portare fuori la lavoraizone dell'input
-
+        
         Scanner in = new Scanner(System.in); 
         String str = in.nextLine();
 
